@@ -41,13 +41,21 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Generate Allure Report
-        uses: simple-ik/allure-report-action@v1.9
+      - name: Copy history from previous run
         if: always()
-        with:
-          gh_pages: gh-pages
-          allure_results: allure-results
-          allure_report: allure-report
+        run: cp -r gh-pages/history/. allure-results/history/ 2>/dev/null || true
+
+      - name: Install Allure CLI
+        if: always()
+        run: |
+          curl -sLo allure.tgz https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
+          tar -zxf allure.tgz
+          sudo mv allure-2.27.0 /opt/allure
+          echo "/opt/allure/bin" >> $GITHUB_PATH
+
+      - name: Generate Allure Report
+        if: always()
+        run: allure generate allure-results --clean -o allure-report
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
