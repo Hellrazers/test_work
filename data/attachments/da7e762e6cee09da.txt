@@ -1,0 +1,6 @@
+2026-06-11 20:38:38 [    INFO] [API CLIENT] Initializing session
+2026-06-11 20:38:38 [    INFO] → Method: POST  Url path: /api/createAccount
+2026-06-11 20:38:38 [    INFO]   Payload: {'name': 'Matthew Calhoun', 'email': 'user_023637885554@green.biz', 'password': 'Password1234', 'title': 'Miss', 'birth_date': 16, 'birth_month': 4, 'birth_year': 1960, 'firstname': 'Sarah', 'lastname': 'Smith', 'company': 'Gray LLC', 'address1': '54758 Mark Fields Suite 569', 'country': 'Singapore', 'zipcode': '20753', 'city': 'Watsonhaven', 'state': 'Colorado', 'mobile_number': '001-261-602-1436x066'}
+2026-06-11 20:38:39 [    INFO] ← Status code: 200 Response time: 175.9 ms
+2026-06-11 20:38:39 [    INFO] → Method: DELETE  Url path: /api/deleteAccount
+2026-06-11 20:38:39 [    INFO] ← Status code: 200 Response time: 55.61 ms

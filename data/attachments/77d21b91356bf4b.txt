@@ -1,0 +1,9 @@
+2026-06-11 20:38:39 [    INFO] [API CLIENT] Initializing session
+2026-06-11 20:38:39 [    INFO] → Method: POST  Url path: /api/createAccount
+2026-06-11 20:38:39 [    INFO]   Payload: {'name': 'Terri Williams', 'email': 'user_96744437a17a@mejia.com', 'password': 'Password1234', 'title': 'Mr', 'birth_date': 23, 'birth_month': 12, 'birth_year': 1984, 'firstname': 'Kathryn', 'lastname': 'Woods', 'company': 'Lawson-Welch', 'address1': '018 Kelly Springs', 'country': 'India', 'zipcode': '46357', 'city': 'North Michaelberg', 'state': 'New Mexico', 'mobile_number': '(260)942-5678'}
+2026-06-11 20:38:39 [    INFO] ← Status code: 200 Response time: 166.05 ms
+2026-06-11 20:38:39 [    INFO] [REGISTER] responseCode=201 message=User created!
+2026-06-11 20:38:47 [    INFO] → Method: DELETE  Url path: /api/deleteAccount
+2026-06-11 20:38:47 [    INFO] ← Status code: 200 Response time: 122.92 ms
+2026-06-11 20:38:47 [    INFO] [DELETE] responseCode=200 message=Account deleted!
+2026-06-11 20:38:47 [    INFO] Trace saved: /home/runner/work/test_work/test_work/traces/test_hybrid_checkout_address_chromium_.zip

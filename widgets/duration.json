@@ -1,1 +1,1 @@
-[]
+[{"uid":"16b34c2be2cdd539","name":"Hybrid: API registration + UI checkout address validation","time":{"start":1781210319923,"stop":1781210327105,"duration":7182},"status":"passed","severity":"normal"},{"uid":"a6ec8e1b47849e02","name":"API: create account → verify 201 → delete → verify 200","time":{"start":1781210318888,"stop":1781210319152,"duration":264},"status":"passed","severity":"normal"}]

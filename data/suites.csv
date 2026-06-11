@@ -1,0 +1,14 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 11 20:38:39 UTC 2026","Thu Jun 11 20:38:47 UTC 2026","7182","tests.ui_tests.tests","test_hybrid_flow","","","","Hybrid: API registration + UI checkout address validation","End-to-end hybrid test covering the full user journey across API and UI layers.
+
+Pre-condition (API): registers a unique user via POST /api/createAccount using Faker-generated data.
+
+UI steps:
+1. /login — authenticates with the API-created credentials.
+2. /products — adds 2 randomly selected products to the cart.
+3. /view_cart — verifies both items are present with correct attributes (name, price, quantity=1, total) and proceeds to checkout.
+4. /checkout — parses the Delivery Address block and asserts every field (name, company, address, city, state, zip, country, phone) matches the registration payload.
+
+Post-condition (API): deletes the user via DELETE /api/deleteAccount regardless of test outcome."
+"passed","Thu Jun 11 20:38:38 UTC 2026","Thu Jun 11 20:38:39 UTC 2026","264","tests.api_tests","test_create","","","","API: create account → verify 201 → delete → verify 200","Smoke test for the account lifecycle via REST API.
+Creates a user with Faker-generated data via POST /api/createAccount, asserts responseCode 201, then deletes the same user via DELETE /api/deleteAccount and asserts responseCode 200."

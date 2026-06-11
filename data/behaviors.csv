@@ -1,0 +1,3 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","Hybrid E2E","Register via API → UI checkout → verify delivery address → delete via API","0","0","1","0","0"
+"","Account API","Create and delete account","0","0","1","0","0"
