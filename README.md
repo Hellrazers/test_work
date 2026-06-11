@@ -1,10 +1,12 @@
 # Hybrid QA Automation — automationexercise.com
 
+![CI](https://github.com/Hellrazers/test_work/actions/workflows/run-tests.yml/badge.svg)
+
 Hybrid E2E test suite: API pre-condition → UI test → API teardown.
 
 **Stack:** Python 3.10+ · Playwright · Pytest · Allure Report
 
-**[Allure Report](https://YOUR_USERNAME.github.io/YOUR_REPO/)** — автоматично оновлюється після кожного push у `main`.
+**[Allure Report](https://hellrazers.github.io/test_work/)** — auto-updated on every push to `main`.
 
 ---
 
